@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej2</title>
+    <script>
+        function Cambio(){
+            let Edad=document.getElementById("numero").value;
+            if(Edad>=18){
+                alert("Eres mayor de edad");
+            }
+            else{
+                alert("Eres menor de edad");
+            }
+        }
+    </script>
+</head>
+<body>
+                <!--2-Condicional:
+            Crea una página web con un input de tipo number y un botón
+            (button). Al clicar el botón, si el número escrito es mayor de 18
+            saca un alert diciendo “Eres mayor de edad” y si no, “Eres menor
+            de edad”. Ayuda:
+            if (condition) {
+            // block of code to be executed if the condition is true
+            } else {
+            // block of code to be executed if the condition is false
+            }-->
+<input type="number" id="numero">
+<button onclick="Cambio();">Enviar</button>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      img{
+          width: 430px;
+          position: absolute;
+          left: 400px;
+          top: 300px;
+      }
+      #enlace{
+          font-size: 20px;
+          position: absolute;
+          left: 1000px;
+          top: 300px;
+      }
+  </style>
+  <script>
+         function caballo(){
+                let image=document.getElementById("a");
+                image.src = "Images/donjuan.jpg";
+                let enlace=document.getElementById("enlace");
+                enlace.href="https://es.wikipedia.org/wiki/Equus_ferus_caballus";
+                enlace.innerHTML="Enlace a Caballos";
+            }
+          function gato(){
+            let image=document.getElementById("a");
+            image.src = "Images/gatomuevecabeza.gif";
+            let enlace=document.getElementById("enlace");
+                enlace.href="https://es.wikipedia.org/wiki/Felis_silvestris_catus";
+                enlace.innerHTML="Enlace a Gatos";
+            
+          }
+          function perro(){
+            let image=document.getElementById("a");
+            image.src = "Images/perrofachera.jfif";
+            let enlace=document.getElementById("enlace");
+                enlace.href="https://es.wikipedia.org/wiki/Canis_familiaris";
+                enlace.innerHTML="Enlace a Perros";
+          }
+
+</script>
+</head>
+<body>
+  <div class="container">
+    <div class="panel-group" id="accordion3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Cambiar imágenes</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse ">
+          <div class="panel-body">
+              <button onclick="perro();">PERRO</button><br>
+              <button onclick="caballo();">CABALLO</button><br>
+              <button onclick="gato();">GATO</button><br>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  <div>
+  <img id="a" src="Images/perrofachera.jfif">
+  <a id="enlace" href="https://es.wikipedia.org/wiki/Canis_familiaris" target="_blanck">Enlace a Perros</a></div> 
+</body>
+</html>
